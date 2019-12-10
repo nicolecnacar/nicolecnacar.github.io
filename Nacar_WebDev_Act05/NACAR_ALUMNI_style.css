@@ -1,0 +1,170 @@
+body {
+	font-family: 'Work Sans', sans-serif;
+	background-color: #F1F0EF;
+}
+
+.content {
+  max-width: 600px;
+  margin: auto;
+  padding: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: #DF456D;
+	padding-left: 9px;
+}
+
+.navbar a {
+	transform: scaleX(0.0001);
+	-webkit-transition: -webkit-transform 250ms ease-in-out;
+	transition: transform 250ms ease-in-out;
+}
+
+.navbar a:hover {
+	border-bottom: 1px solid #181818;
+	transform: scaleX(1);
+}
+
+.title {
+	color: #181818;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > img {
+    width: 100px;
+}
+
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.post textarea {
+	width: 588px;
+	margin-top: 50px;
+	height: 200px;
+	padding: 5px;
+	outline: none;
+}
+
+.image-upload > input {
+  display: none;
+}
+
+.image-upload img {
+	position: absolute;
+	margin-top: -40px;
+	margin-left: 460px;
+	height: 25px;
+	width: 30px;
+}
+
+.cam {
+	position: absolute;
+	margin-top: -42px;
+	margin-left: 500px;
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+}
+
+.post button {
+	background-color: #DF456D;
+	color: #fff;
+	border: none;
+	padding: 6px 10px;
+	box-shadow: 1px 1px #F1F0EF;
+	position: absolute;
+	margin-top: -40px;
+	margin-left: 540px;
+	cursor: pointer;
+	outline: none;
+}
+
+.groups h3 {
+	margin-top: 30px;
+}
+
+hr {
+	border-top: 1px solid #DF456D;
+}
+
+.groups img {
+	width: 50px;
+	border-radius: 100%;
+}
+
+.groups p {
+	line-height: 5px;
+}
+
+.name {
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: -40px;
+	margin-left: 65px;
+}
+
+.time {
+	font-size: 12px;
+	color: #565555;
+	margin-left: 65px;
+}
+
+.stat {
+	font-size: 14px;
+	margin-top: 40px;
+}
+
+table, th{
+	border: 1px solid #181818;
+	margin-top: 30px;
+	border-collapse: collapse;
+	background-color: #fff;
+}
+
+.groups textarea {
+	margin-top: -1px;
+	width: 588px;
+	border: 1px solid #181818;
+	padding: 5px;
+	outline: none;
+	height: 60px;
+
+}
+
+.groups button {
+	background-color: #DF456D;
+	color: #fff;
+	border: none;
+	padding: 6px 10px;
+	box-shadow: 1px 1px #F1F0EF;
+	position: relative;
+	left: 510px;
+	top: -40px;
+	cursor: pointer;
+	outline: none;
+}
